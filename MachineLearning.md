@@ -1,7 +1,7 @@
 ---
+title: machine learning
 layout: default
 ---
-
 
 # Machine Learning
 
