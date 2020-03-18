@@ -341,4 +341,4 @@ Thường tập train này sẽ còn được chia làm hai phần nhỏ. Một 
 1. sklearn: https://github.com/scikit-learn/scikit-learn
 2. padas: https://pandas.pydata.org
 3. Google có trang chuyên tìm kiếm về dataset: https://datasetsearch.research.google.com
-4. Cuốn sách rất "dễ" để học ML với Python: [Python Machine Learning](https://sebastianraschka.com/books.html)của Sebastian Raschka.
+4. Cuốn sách rất "dễ" để học ML với Python: [Python Machine Learning](https://sebastianraschka.com/books.html) của Sebastian Raschka.
