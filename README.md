@@ -8,3 +8,6 @@ I also hold a high level expert position at Industrial University of Ho Chi Minh
 ## About this page
 
 I will use this page to blog on Data Science, AI, and Mathematics. Watch out for my update!
+
+## Vietnamese
+1. [Introduction to Machine Learning](https://github.com/linhduo/LinhDuo/blob/master/MachineLearning.html)
