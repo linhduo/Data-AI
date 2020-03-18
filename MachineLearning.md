@@ -1,3 +1,9 @@
+---
+layout: page
+title: machine learning 
+---
+
+
 # Machine Learning
 
 Machine learning ("học máy" hay "máy học") là một nhánh của AI (trí tuệ nhân tạo), chuyên xây dựng các thuật toán để máy tính __tự học__ các qui luật và tri thức từ các tập __dữ liệu__ được cung cấp. Nó khác với cách tiếp cận cổ điển của AI, gọi là symbolic AI, ở đó các tri thức và quy luật được người dùng lập trình cứng (hard code) cho máy tính thực hiện.
