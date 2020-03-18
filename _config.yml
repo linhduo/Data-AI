@@ -1,4 +1,6 @@
-theme: jekyll-theme-cayman
 title: Thoughts on AI and more
 author: Linh Nguyen
 email: lnguyenui@gmail.com
+
+theme: jekyll-theme-cayman
+markdown: kramdown
