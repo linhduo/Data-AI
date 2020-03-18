@@ -1,7 +1,6 @@
-- - - 
-layout: page
-title: machine learning 
-- - -
+---
+layout: default
+---
 
 
 # Machine Learning
