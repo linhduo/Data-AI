@@ -1,7 +1,7 @@
----
+___
 layout: page
 title: machine learning 
----
+___
 
 
 # Machine Learning
