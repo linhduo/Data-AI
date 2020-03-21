@@ -11,4 +11,4 @@ Together with some friends, I lead the project [DamsanX](https://damsanx.ai). It
 I will use this page to blog on Data Science, AI, and Mathematics. Watch out for my updates!
 
 ## Vietnamese
-1. [Introduction to Machine Learning](https://github.com/linhduo/LinhDuo/blob/master/MachineLearning.md)
+1. [Introduction to Machine Learning](https://linhduo.github.io/web/MachineLearning)
