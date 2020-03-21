@@ -258,7 +258,6 @@ new_label.head()
     </tr>
   </tbody>
 </table>
-</div>
 
 
 
@@ -313,8 +312,6 @@ y.head()
     </tr>
   </tbody>
 </table>
-</div>
-
 
 
 Chia dữ liệu thành tập train và tập test. Cái này có thể làm bằng việc gọi sklearn.
