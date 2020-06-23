@@ -1,3 +1,8 @@
+---
+layout: default
+title: Sparse Covariance Problem
+---
+
 ## Sparse inverse covariance matrix problem
 
 __Problem:__ Assume that $S$ is the empirical covariance matrix of the normal distribution $N(0,\Sigma)$, where $\Sigma^{-1}$ is sparse. We attempt to reconstruction $\Sigma$ (or equivalently $\Sigma^{-1}$.
