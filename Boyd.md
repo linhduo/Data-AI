@@ -1,20 +1,20 @@
 ---
 layout: default
-title: Sparse Covariance Problem
+title: Sparse Inverse Covariance
 ---
 
 ## Sparse inverse covariance matrix problem
 
-__Problem:__ Assume that $S$ is the empirical covariance matrix of the normal distribution $N(0,\Sigma)$, where $\Sigma^{-1}$ is sparse. We attempt to reconstruction $\Sigma$ (or equivalently $\Sigma^{-1}$).
+__Problem:__ Assume that $S$ is the empirical covariance matrix of the normal distribution $N(0,\Sigma)$, where $\Sigma^{-1}$ is sparse. We attempt to reconstruction $\Sigma$ (or equivalently $\Sigma^{-1}$.
 
 The paper (Boyd et al) suggested to solve the optimization problem
-$$\label{E:sparse} \tag{1} \arg\min_{X \in S_+} Tr(SX) - \log \det(X) + \lambda \|X\|_1,$$ to find $X= \Sigma^{-1}$.
+\begin{equation} \label{E:sparse} \arg\min_{X \in S_+} Tr(SX) - \log \det(X) + \lambda \|X\|_1 ,\tag{1}\end{equation} to find $X= \Sigma^{-1}$.
 Here, $S_+$ be the set all nonnegative definite symmetric matrices. 
 
 The statistical derivation of (\ref{E:sparse}) will be considered later. We instead look at some intuition. Namely, we first prove:
 
 __Lemma 1__ Assume that $S \in S_+$ is invertible. Then, the non-regularized problem
-$$ \label{E:non-reg} \tag{1b} \arg\min_{X \in S_+} Tr(SX) - \log \det(X),$$ has a unique solution $X= S^{-1}$. 
+\begin{equation} \label{E:non-reg} \tag{1b} \arg\min_{X \in S_+} Tr(SX) - \log \det(X),\end{equation} has a unique solution $X= S^{-1}$. 
 
 __Proof__ 
 We note that 
@@ -30,12 +30,9 @@ The above lemma (at least) tells us that $X$ is a sparse approximate inverse of 
 
 Now, to solve (\ref{E:sparse}), we employ ADMM method, which reads as
 
-\begin{eqnarray}\label{E:ADMM1} \tag{2a}
-X^{n+1} &=& \arg \min_{X \in S_+} Tr(SX) - \log \det(X) + \rho/2 \|X- Z^k + U^k\|^2, \\
-\label{E:ADMM2} \tag{2b}
-Z^{k+1} &=& \arg \min_{Z \in S_+} \lambda \|Z\|_1 + \rho/2 \|X^{k+1}-Z +U^k\|^2 = S_{\lambda/\rho}(X^{k+1} + U^{k}),\\
-\label{E:ADMM3}\tag{2c}
-U^{k+1} &=& U^k + X^{k+1}-Z^{k+1}. \end{eqnarray}
+\begin{align}\label{E:ADMM1}
+X^{n+1} = \arg \min_{X \in S_+} Tr(SX) - \log \det(X) + \rho/2 \|X- Z^k + U^k\|^2, \tag{2a} \\
+Z^{k+1} = \arg \min_{Z \in S_+} \lambda \|Z\|_1 + \rho/2 \|X^{k+1}-Z +U^k\|^2 = S_{\lambda/\rho}(X^{k+1} + U^{k}),\tag{2b}  \\U^{k+1} = U^k + X^{k+1}-Z^{k+1}. \tag{2c}\end{align}
 
 The only complicated problem is (\ref{E:ADMM1}). In order to solve it, we will make use of the following results
 
