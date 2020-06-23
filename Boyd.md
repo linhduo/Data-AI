@@ -5,7 +5,7 @@ title: Sparse Covariance Problem
 
 ## Sparse inverse covariance matrix problem
 
-__Problem:__ Assume that $S$ is the empirical covariance matrix of the normal distribution $N(0,\Sigma)$, where $\Sigma^{-1}$ is sparse. We attempt to reconstruction $\Sigma$ (or equivalently $\Sigma^{-1}$.
+__Problem:__ Assume that $S$ is the empirical covariance matrix of the normal distribution $N(0,\Sigma)$, where $\Sigma^{-1}$ is sparse. We attempt to reconstruction $\Sigma$ (or equivalently $\Sigma^{-1}$).
 
 The paper (Boyd et al) suggested to solve the optimization problem
 $$\label{E:sparse} \tag{1} \arg\min_{X \in S_+} Tr(SX) - \log \det(X) + \lambda \|X\|_1,$$ to find $X= \Sigma^{-1}$.
