@@ -10,5 +10,9 @@ Together with some friends, I lead the project [DamsanX](https://damsanx.ai). It
 
 I will use this page to blog on Data Science, AI, and Mathematics. Watch out for my updates!
 
+## Misc notes on Math for AI
+
+1. [Sparse Covariance Matrix Problem] (https://linhduo.github.io/web/Boyd)
+
 ## Vietnamese
 1. [Introduction to Machine Learning](https://linhduo.github.io/web/MachineLearning)
